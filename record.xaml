@@ -1,0 +1,20 @@
+﻿<Window x:Class="moriasapp.record"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:moriasapp"
+        mc:Ignorable="d"
+        Icon="C:\Users\user\source\repos\moriasapp\moriasapp\images\icon.jpg"
+        Title="record" Height="450" Width="800" Background="#00AFF0">
+    <Grid>
+        <DataGrid x:Name="datagrid" IsReadOnly="True" Height="331" Margin="10,78,10,0" VerticalAlignment="Top" SelectionChanged="Datagrid_SelectionChanged" MouseDoubleClick="doublclick"/>
+        <ComboBox Name="comboBox1" Margin="10,32,646,357" SelectionChanged="ComboBox1_SelectionChanged">
+            <ComboBoxItem Content="Student"/>
+            <ComboBoxItem Content="Parent"/>
+        </ComboBox>
+        <TextBox x:Name="searchbox" HorizontalAlignment="Left" Height="23" Margin="397,32,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="522,35,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="moriasapp.adminpage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:moriasapp"
+        mc:Ignorable="d"
+        Icon="C:\Users\user\source\repos\moriasapp\moriasapp\images\icon.jpg"
+        Title="adminpage" Height="584.416" Width="1000">
+
+
+
+    <Grid Margin="0,4,0,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#3498db" Grid.ColumnSpan="2"  Height="89" VerticalAlignment="Top" Margin="0,-6,0,0">
+            <Button Background="Transparent" Click="home_btn_click" Margin="0,20,0,0" Height="63" VerticalAlignment="Top" BorderBrush="#00AFF0">
+                <StackPanel Orientation="Horizontal" Width="135">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\home.png" Margin="0,10"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="165" Height="35">Home</TextBlock>
+
+                </StackPanel>
+
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Click="chilreg_btn_click" Margin="0,13,0,0" Height="63">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\download (1).png" Margin="0,10"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="165" Height="35">child registration</TextBlock>
+
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Margin="10,13,0,0" Height="63" Click="parreg_btn_b_click">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\children-icon-png-25.jpg" Margin="0,10"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="165" Height="35"><Run Text="Parent registration"/></TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Background="Transparent" BorderBrush="#00AFF0" Margin="10,13,0,0" Height="63" Click="record_btn_click">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\task-management-icon-11.jpg" Margin="0,10"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="165" Height="35"><Run Text="Record"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Click="gallery_btn_click" Margin="10,20,0,0" Height="63" VerticalAlignment="Top" Width="173">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\download (3).jpg" Width="50" Margin="0,10"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="114" Height="35">Switch User</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="508" Margin="0,92,0,-47" VerticalAlignment="Top" Width="992" Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\font.jpg" Stretch="Fill" />
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Foreground="White" Margin="26,336,0,142" FontSize="50" TextWrapping="Wrap" VerticalAlignment="Center" Width="670" Height="75" FontFamily="Segoe Script" Text="Hope for his little ones"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="25" Foreground="White" Margin="42,429,0,0" TextWrapping="Wrap" Text="Give a helping hand for those who need it!" VerticalAlignment="Top" Width="622" Height="76" FontFamily="Segoe Script"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,90 @@
+﻿<Window x:Class="moriasapp.parregform"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:moriasapp"
+        mc:Ignorable="d"
+        Icon="C:\Users\user\source\repos\moriasapp\moriasapp\images\icon.jpg"
+        Title="parregform" Height="500" Width="1000" Background="Gray" >
+    <Grid Margin="0,4,0,-25">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#00AFF0" Grid.ColumnSpan="6"  Height="74" VerticalAlignment="Top" Margin="-0,0,19,0">
+            <Button Background="Transparent" Click="home_btn_click" Margin="0,5,0,0" Height="63" VerticalAlignment="Top" BorderBrush="#00AFF0">
+                <StackPanel Orientation="Horizontal" Width="135">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\home.png" Margin="0,5,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,5,0,0" Width="77" Height="34">Home</TextBlock>
+
+                </StackPanel>
+
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Click="chilreg_btn_click" Margin="0,8,0,0" Height="63" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\download (1).png" Margin="0,5,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,5,0,10" Width="165" Height="35">child registration</TextBlock>
+
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Margin="10,5,0,0" Height="63" Click="parreg_btn_b_click">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\children-icon-png-25.jpg" Margin="0,0,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10" Width="165" Height="35"><Run Text="Parent registration"/></TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Background="Transparent" BorderBrush="#00AFF0" Margin="0,5,0,0" Height="63" Click="record_btn_click">
+                <StackPanel Orientation="Horizontal" Width="150">
+
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\task-management-icon-11.jpg" Margin="0,5,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,5,00,0" Width="82" Height="36"><Run Text="Record"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderBrush="#00AFF0" Click="gallery_btn_click" Margin="0,5,0,6" Width="173">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\user\source\repos\moriasapp\moriasapp\images\download (3).jpg" Width="50" Margin="0,5,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="0,5,0,0" Width="165" Height="35">Switch User</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <Separator HorizontalAlignment="Left" Height="48" Margin="0,58,0,0" VerticalAlignment="Top" Width="992" RenderTransformOrigin="0.445,0" Grid.ColumnSpan="2"/>
+        <StackPanel Orientation="Vertical" Margin="20,90,116,30">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="ID:" HorizontalAlignment="Left" Margin="9,8,0,5" VerticalAlignment="Top" RenderTransformOrigin="0.529,1.909" Width="160" Height="37" FontSize="20" Background="Transparent"/>
+                <TextBox x:Name="id" HorizontalAlignment="Left" Height="31" Margin="25,8,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" RenderTransformOrigin="1.04,0.701" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Name:" HorizontalAlignment="Left" Margin="9,8,0,5" VerticalAlignment="Top" RenderTransformOrigin="0.529,1.909" Width="160" Height="37" FontSize="20" Background="Transparent"/>
+                <TextBox x:Name="name" HorizontalAlignment="Left" Height="31" Margin="25,8,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" RenderTransformOrigin="1.04,0.701" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Age:" HorizontalAlignment="Left" Margin="9,8,0,5" VerticalAlignment="Top" Width="160" Height="42" FontSize="20" Background="#00000000" RenderTransformOrigin="0.439,-0.008"/>
+                <TextBox x:Name="age" HorizontalAlignment="Left" Height="31" Margin="25,8,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20" />
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+
+                <RadioButton Content="Male" FontSize="20" Margin="30,10,0,5" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Female" FontSize="20" Width="91" Margin="90,20,0,5" Checked="RadioButton_Checked_1"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="entry date:" Height="42" Width="160" Margin="9,8,0,5" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Background="#00000000" />
+                <DatePicker x:Name="datapicker" Margin="25,10,0,0" Width="177" Height="29"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                <Button Click="btn_insert__Click" Content="ADD" Height="31" Width="182" Margin="3,19,0,5" Background="Transparent" />
+                <Button Click="btn_Delete_Click" Content="DELETE" Height="31" Width="149" Margin="30,19,5,5" Background="Transparent" />
+            </StackPanel>
+            <Button Click="btn_update_Click" Content="UPDATE" Height="23"  Background="Transparent" Margin="90,10,125,0" />
+        </StackPanel>
+        <DataGrid x:Name="datagridpar" IsReadOnly="True" HorizontalAlignment="Left" Height="330" Margin="446,136,0,0" VerticalAlignment="Top" Width="505" SelectionChanged="Datagridstu_SelectionChanged" MouseDoubleClick="Datagridstu_MouseDoubleClick" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" x:Name="searchbox" Height="32" Margin="10,93,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="174" Grid.Column="1"/>
+        <Button Content="Search"  Grid.Column="1" HorizontalAlignment="Left" Margin="215,93,0,0" VerticalAlignment="Top" Width="74" Height="32" Click="Button_Click"/>
+    </Grid>
+</Window>
