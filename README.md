@@ -1,0 +1,2 @@
+# Moriasapp
+sample mvc application
